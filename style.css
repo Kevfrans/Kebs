@@ -1,0 +1,56 @@
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(to bottom, #ff9a9e, #fad0c4);
+}
+
+.container {
+  text-align: center;
+}
+
+.heart-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transform: scale(1);
+  animation: pulse 1.5s infinite;
+}
+
+.heart-button img {
+  width: 80px;
+  height: 80px;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.confession {
+  display: none;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.confession h1 {
+  color: #d9534f;
+  margin: 0;
+}
+
+.confession p {
+  margin: 10px 0;
+  color: #555;
+  font-size: 1.2em;
+}
